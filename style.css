@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F5F6FB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/*globals*/
+
+
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+
+input, label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    transition: 0.2s ease-in-out;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number]{
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+
+
+/*elements*/
+
+
+
+form{
+    width: 100%;
+}
+.section{
+    width: 1000px;
+    padding: 40px;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.description{
+    margin-top: 20px;
+    color: #808080;
+    text-align: justify;
+}
+
+
+
+.inputs{
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    row-gap: 20px;
+    align-items: center;
+}
+.inputs h3{
+    justify-self: end;
+
+}
+
+
+
+.number input{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    text-align: center;
+}
+.number input:hover{
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+.number input:focus{
+    background: #E7FEF6;
+    border: 2px solid #63A48C;
+    outline: none;
+    font-weight: 700;
+}
+.number input:invalid{
+    background: #FEE7E7;
+    border: 2px solid #A46363;
+    outline: none;
+    font-weight: 700;
+}
+
+
+
+.marks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marks input{
+    display: none;
+}
+.marks label{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marks label:hover{
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+.marks input:checked + label{
+    background: #E7FEF6;
+    border: 2px solid #63A48C;
+    outline: none;
+    font-weight: 700;
+}
+
+
+
+.yes-no input{
+    display: none;
+}
+.yes-no label{
+    width: 80px;
+    height: 40px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yes-no label:hover{
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+.yes-no input:checked + label{
+    background: #E7FEF6;
+    border: 2px solid #63A48C;
+    outline: none;
+    font-weight: 700;
+}
+
+
+
+.question{
+    margin-top: 40px;
+}
+.answears{
+    margin-top: 20px;
+}
+.answear h3, .answear label{
+    text-align: justify;
+}
+.answear label{
+    padding: 20px;
+    display: grid;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    align-items: center;
+    position: relative;
+}
+.answear label input{
+    display: none;
+}
+.custom-radio{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.answear label:hover{
+    border: 2px solid #CCCCCC;
+    cursor: pointer;
+    outline: none;
+}
+.answear label:hover .custom-radio{
+    background: #CCCCCC;
+}
+.answear input:checked~.custom-radio{
+    background: #63A48C;
+    border: 2px solid #63A48C;
+}
+
+
+
+/*media queries*/
+
+
+
+@media(max-width: 1000px){
+.section{
+    width: 100%;
+}
+.section h2{
+    text-align: center;
+}
+}
+
+
+
+@media(max-width: 600px){
+.inputs{
+    grid-template-columns: auto;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+}

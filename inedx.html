@@ -1,0 +1,359 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kalkulartor punktów</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div class="section">
+            <h2>Wyniki egzaminów</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at volutpat magna, non imperdiet ante. Aliquam efficitur sem pulvinar mollis suscipit. Curabitur quam justo, dictum eget neque id, iaculis finibus odio.</p>
+            <div class="inputs number">
+                    <h3>Język polski</h3>
+                    <input type="number" name="egzamin-polski" min="0" max="100">
+                  
+                    <h3>Matematyka</h3>
+                    <input type="number" name="egzamin-matematyka" min="0" max="100">
+                              
+                    <h3>Język obcy</h3>
+                    <input type="number" name="egzamin-jezyki" min="0" max="100">                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Oceny na świadectwie</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at volutpat magna, non imperdiet ante. Aliquam efficitur sem pulvinar mollis suscipit. Curabitur quam justo, dictum eget neque id, iaculis finibus odio.</p>
+            <div class="inputs">
+                    <h3>Język polski</h3>
+                    <div class="marks">
+                        <input type="radio" name="ocena-polski" id="polski-2" value="2">
+                        <label for="polski-2">2</label>
+                        
+                        <input type="radio" name="ocena-polski" id="polski-3" value="3">
+                        <label for="polski-3">3</label>
+                        
+                        <input type="radio" name="ocena-polski" id="polski-4" value="4">
+                        <label for="polski-4">4</label>
+                        
+                        <input type="radio" name="ocena-polski" id="polski-5" value="5">
+                        <label for="polski-5">5</label>
+                        
+                        <input type="radio" name="ocena-polski" id="polski-6" value="6">
+                        <label for="polski-6">6</label>                        
+                    </div>
+                  
+                    <h3>Matematyka</h3>
+                    <div class="marks">
+                        <input type="radio" name="ocena-matematyka" id="matematyka-2" value="2">
+                        <label for="matematyka-2">2</label>
+                        
+                        <input type="radio" name="ocena-matematyka" id="matematyka-3" value="3">
+                        <label for="matematyka-3">3</label>
+                        
+                        <input type="radio" name="ocena-matematyka" id="matematyka-4" value="4">
+                        <label for="matematyka-4">4</label>
+                        
+                        <input type="radio" name="ocena-matematyka" id="matematyka-5" value="5">
+                        <label for="matematyka-5">5</label>
+                        
+                        <input type="radio" name="ocena-matematyka" id="matematyka-6" value="6">
+                        <label for="matematyka-6">6</label>                        
+                    </div>
+                              
+                    <h3>Przedmiot 1</h3>
+                    <div class="marks">
+                        <input type="radio" name="ocena-przedmiot1" id="przedmiot1-2" value="2">
+                        <label for="przedmiot1-2">2</label>
+                        
+                        <input type="radio" name="ocena-przedmiot1" id="przedmiot1-3" value="3">
+                        <label for="przedmiot1-3">3</label>
+                        
+                        <input type="radio" name="ocena-przedmiot1" id="przedmiot1-4" value="4">
+                        <label for="przedmiot1-4">4</label>
+                        
+                        <input type="radio" name="ocena-przedmiot1" id="przedmiot1-5" value="5">
+                        <label for="przedmiot1-5">5</label>
+                        
+                        <input type="radio" name="ocena-przedmiot1" id="przedmiot1-6" value="6">
+                        <label for="przedmiot1-6">6</label>                        
+                    </div>
+
+                    <h3>Przedmiot 2</h3>
+                    <div class="marks">
+                        <input type="radio" name="ocena-przedmiot2" id="przedmiot2-2" value="2">
+                        <label for="przedmiot2-2">2</label>
+                        
+                        <input type="radio" name="ocena-przedmiot2" id="przedmiot2-3" value="3">
+                        <label for="przedmiot2-3">3</label>
+                        
+                        <input type="radio" name="ocena-przedmiot2" id="przedmiot2-4" value="4">
+                        <label for="przedmiot2-4">4</label>
+                        
+                        <input type="radio" name="ocena-przedmiot2" id="przedmiot2-5" value="5">
+                        <label for="przedmiot2-5">5</label>
+                        
+                        <input type="radio" name="ocena-przedmiot2" id="przedmiot2-6" value="6">
+                        <label for="przedmiot2-6">6</label>                        
+                    </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Świadectwo z wyróżnieniem</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at volutpat magna, non imperdiet ante. Aliquam efficitur sem pulvinar mollis suscipit. Curabitur quam justo, dictum eget neque id, iaculis finibus odio.</p>
+            <div class="inputs yes-no">
+                <span>
+                    <input type="radio" name="swiadectwo" id="swiadectwo-tak" value="1">
+                    <label for="swiadectwo-tak">Tak</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="swiadectwo" id="swiadectwo-nie" value="0">
+                    <label for="swiadectwo-nie">Nie</label>  
+                </span>                        
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Działalność charytatywna</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at volutpat magna, non imperdiet ante. Aliquam efficitur sem pulvinar mollis suscipit. Curabitur quam justo, dictum eget neque id, iaculis finibus odio.</p>
+            <div class="inputs yes-no">
+                <span>
+                    <input type="radio" name="wolontariat" id="wolontariat-tak" value="1">
+                    <label for="wolontariat-tak">Tak</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="wolontariat" id="wolontariat-nie" value="0">
+                    <label for="wolontariat-nie">Nie</label>  
+                </span>                        
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Udział w konkursach</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at volutpat magna, non imperdiet ante. Aliquam efficitur sem pulvinar mollis suscipit. Curabitur quam justo, dictum eget neque id, iaculis finibus odio.</p>
+            <div class="inputs yes-no">
+                <span>
+                    <input type="radio" name="konkursy" id="konkursy-tak" value="1">
+                    <label for="konkursy-tak">Tak</label>
+                </span>
+
+                <span>
+                    <input type="radio" name="konkursy" id="konkursy-nie" value="0">
+                    <label for="konkursy-nie">Nie</label>  
+                </span>                        
+            </div>
+            <div class="questions">
+                <div class="question">
+                    <h3>Uzyskanie w zawodach wiedzy będących konkursem o zasięgu ponadwojewódzkim organizowanym przez kuratorów oświaty na podstawie zawartych porozumień:</h3>
+                    <div class="answears">
+                        <div class="answear">
+                            <label for="pytanie1-1">
+                                <input type="radio" name="pytanie1" id="pytanie1-1" value="1">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu przedmiotowego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie1-2">
+                                <input type="radio" name="pytanie1" id="pytanie1-2" value="2">
+                                <span class="custom-radio"></span>
+                                <span>tytułu laureata konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie1-3">
+                                <input type="radio" name="pytanie1" id="pytanie1-3" value="3">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Uzyskanie w zawodach wiedzy będących konkursem o zasięgu międzynarodowym lub ogólnopolskim albo turniejem o zasięgu ogólnopolskim, przeprowadzanymi zgodnie z przepisami wydanymi na podstawie art. 32a ust. 4 i art. 22 ust. 2 pkt 8 ustawy:</h3>
+                    <div class="answears">
+                        <div class="answear">
+                            <label for="pytanie2-1">
+                                <input type="radio" name="pytanie2" id="pytanie2-1" value="1">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania szkoły artystycznej</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie2-2">
+                                <input type="radio" name="pytanie2" id="pytanie2-2" value="2">
+                                <span class="custom-radio"></span>
+                                <span>tytułu laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie2-3">
+                                <input type="radio" name="pytanie2" id="pytanie2-3" value="3">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</span>
+                            </label>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Uzyskanie w zawodach wiedzy będących konkursem o zasięgu wojewódzkim organizowanym przez kuratora oświaty:</h3>
+                    <div class="answears">
+                        <div class="answear">
+                            <label for="pytanie3-1">
+                                <input type="radio" name="pytanie3" id="pytanie3-1" value="1">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów finalisty konkursu przedmiotowego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie3-2">
+                                <input type="radio" name="pytanie3" id="pytanie3-2" value="2">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów laureata konkursu tematycznego lub interdys cyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie3-3">
+                                <input type="radio" name="pytanie3" id="pytanie3-3" value="3">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów finalisty konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie3-4">
+                                <input type="radio" name="pytanie3" id="pytanie3-4" value="4">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu przedmiotowego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie3-5">
+                                <input type="radio" name="pytanie3" id="pytanie3-5" value="5">
+                                <span class="custom-radio"></span>
+                                <span>tytułu laureata konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie3-6">
+                                <input type="radio" name="pytanie3" id="pytanie3-6" value="6">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Uzyskanie w zawodach wiedzy będących konkursem albo turniejem, o zasięgu ponadwojewódzkim lub wojewódzkim, przeprowadzanymi zgodnie z przepisami wydanymi na podstawie art. 32a ust. 4 i art. 22 ust. 2 pkt 8 ustawy:</h3>
+                    <div class="answears">
+                        <div class="answear">
+                            <label for="pytanie4-1">
+                                <input type="radio" name="pytanie4" id="pytanie4-1" value="1">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów finalisty konkursu przedmiotowego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie4-2">
+                                <input type="radio" name="pytanie4" id="pytanie4-2" value="2">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów laureata konkursu tematycznego lub interdys cyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie4-3">
+                                <input type="radio" name="pytanie4" id="pytanie4-3" value="3">
+                                <span class="custom-radio"></span>
+                                <span>dwóch lub więcej tytułów finalisty konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie4-4">
+                                <input type="radio" name="pytanie4" id="pytanie4-4" value="4">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu przedmiotowego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie4-5">
+                                <input type="radio" name="pytanie4" id="pytanie4-5" value="5">
+                                <span class="custom-radio"></span>
+                                <span>tytułu laureata konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie4-6">
+                                <input type="radio" name="pytanie4" id="pytanie4-6" value="6">
+                                <span class="custom-radio"></span>
+                                <span>tytułu finalisty konkursu tematycznego lub interdyscyplinarnego</span>
+                            </label>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>Uzyskanie wysokiego miejsca w zawodach wiedzy innych niż wymienione w pkt 1–4, artystycznych lub sportowych, organizowanych przez kuratora oświaty lub inne podmioty działające na terenie szkoły, na szczeblu:</h3>
+                    <div class="answears">
+                        <div class="answear">
+                            <label for="pytanie5-1">
+                                <input type="radio" name="pytanie5" id="pytanie5-1" value="1">
+                                <span class="custom-radio"></span>
+                                <span>międzynarodowym</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie5-2">
+                                <input type="radio" name="pytanie5" id="pytanie5-2" value="2">
+                                <span class="custom-radio"></span>
+                                <span>krajowym</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie5-3">
+                                <input type="radio" name="pytanie5" id="pytanie5-3" value="3">
+                                <span class="custom-radio"></span>
+                                <span>wojewódzkim</span>
+                            </label>                     
+                        </div>
+
+                        <div class="answear">
+                            <label for="pytanie5-4">
+                                <input type="radio" name="pytanie5" id="pytanie5-4" value="4">
+                                <span class="custom-radio"></span>
+                                <span>powiatowym</span>
+                            </label>                     
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    <input type="submit">
+    </form>
+</body>
+</html>
