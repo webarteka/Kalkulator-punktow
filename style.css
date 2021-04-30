@@ -129,6 +129,9 @@ form{
     justify-content: center;
     align-items: center;
 }
+.marks label:last-child{
+    margin-right: 0;
+}
 .marks label:hover{
     border: 2px solid #999999;
     cursor: pointer;
@@ -173,7 +176,7 @@ form{
 .answears{
     margin-top: 20px;
 }
-.answear h3, .answear label{
+.question h3, .answear label{
     text-align: justify;
 }
 .answear label{
@@ -218,19 +221,29 @@ form{
 @media(max-width: 1000px){
 .section{
     width: 100%;
+    min-width: 320px;
 }
 .section h2{
     text-align: center;
 }
+.answear label{
+    padding: 20px 0 20px 0;
+}
+.answear label:hover{
+    border: 2px solid #ffffff;
+}
 }
 
 
 
-@media(max-width: 600px){
+@media(max-width: 500px){
 .inputs{
-    grid-template-columns: auto;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+}
+.inputs h3{
+    justify-self: center;
+}
+.yes-no{
+    grid-template-columns: 1fr 1fr;
 }
 }
