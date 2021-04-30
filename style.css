@@ -44,7 +44,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 
 
+.hidden{
+    display: none;
+}
+
+
+
 /*elements*/
+
+
+
+.hero{
+    width: 100%;
+    min-height: 50vh;
+    background: #ffffff;
+}
 
 
 
@@ -63,7 +77,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 .results{
     width: 100%;
     height: fit-content;
-    padding: 40px;
     margin: 40px auto 40px auto;
 
     background: #ffffff;
@@ -72,6 +85,41 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
     position: sticky;
     top: 40px;
+}
+.results p{
+    font-weight: 700;
+    line-height: normal;
+}
+.total{
+    width: 100%;
+    padding: 20px 40px;
+
+    border-radius: 20px;
+    background: #E7FEF6;
+    border: 2px solid #63A48C;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total div{
+    font-size: 24px;
+    font-weight: 700;
+}
+.details{
+    padding: 20px 40px;
+}
+.summary{
+    width: 100%;
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.summary div{
+    font-size: 24px;
+    font-weight: 700;
 }
 
 
