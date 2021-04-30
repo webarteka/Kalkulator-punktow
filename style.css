@@ -291,7 +291,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 
 
-@media(max-width: 1280px){
+@media(max-width: 1279px){
     .container{
         width: 100%;
         grid-template-columns: 1fr;
