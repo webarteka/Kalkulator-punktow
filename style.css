@@ -104,8 +104,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
     align-items: center;
 }
 .inputs h3{
-    justify-self: end;
-
+    width: 100%;
+    text-align: right;
 }
 
 
@@ -267,7 +267,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
         grid-template-columns: 1fr;
     }
     .grades h3{
-        justify-self: center;
+        text-align: center;
     }
 
     .answear label{
