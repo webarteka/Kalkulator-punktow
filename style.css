@@ -6,8 +6,6 @@
 body{
     background: #F5F6FB;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 
@@ -50,11 +48,38 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 
 
-form{
+.container{
+    width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 40px;
+}
+
+
+
+.results{
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+    margin: 40px auto 0 auto;
+
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    position: sticky;
+    top: 40px;
+}
+
+
+
+.form{
     width: 100%;
 }
 .section{
-    width: 1000px;
     padding: 40px;
     margin: 40px auto;
     background: #ffffff;
@@ -218,32 +243,38 @@ form{
 
 
 
-@media(max-width: 1000px){
-.section{
-    width: 100%;
-    min-width: 320px;
-}
-.section h2{
-    text-align: center;
-}
-.answear label{
-    padding: 20px 0 20px 0;
-}
-.answear label:hover{
-    border: 2px solid #ffffff;
-}
+@media(max-width: 1280px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .results, .section{
+        max-width: 1000px;
+    }
 }
 
 
 
 @media(max-width: 500px){
-.inputs{
-    grid-template-columns: 1fr;
-}
-.inputs h3{
-    justify-self: center;
-}
-.yes-no{
-    grid-template-columns: 1fr 1fr;
-}
+    .section h2{
+        text-align: center;
+    }
+    .section p{
+        line-height: 120%;
+    }
+
+    .grades{
+        grid-template-columns: 1fr;
+    }
+    .grades h3{
+        justify-self: center;
+    }
+
+    .answear label{
+        padding: 20px 0;
+        text-align: left;
+    }
+    .answear label:hover{
+        border: 2px solid #ffffff;
+    }
 }
