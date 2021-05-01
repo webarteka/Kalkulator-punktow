@@ -220,51 +220,51 @@ function updateValue(){
     else{wolontariat = 0;}
     document.getElementById('wolontariat').textContent = wolontariat;
 
-    //shows or hides questions
+    //counts points for konkursy
 
     if(kon == 1){
         document.getElementById('pytania').classList.remove('hidden');
+
+        if(kP1 == 1){konkursy1 = 10;}
+        else if(kP1 == 2){konkursy1 = 7;}
+        else if(kP1 == 3){konkursy1 = 5;}
+        else {konkursy1 = 0;}
+
+        if(kP2 == 1){konkursy2 = 10;}
+        else if(kP2 == 2){konkursy2 = 4;}
+        else if(kP2 == 3){konkursy2 = 3;}
+        else {konkursy2 = 0;}
+
+        if(kP3 == 1){konkursy3 = 10;}
+        else if(kP3 == 2){konkursy3 = 7;}
+        else if(kP3 == 3){konkursy3 = 5;}
+        else if(kP3 == 4){konkursy3 = 7;}
+        else if(kP3 == 5){konkursy3 = 5;}
+        else if(kP3 == 6){konkursy3 = 3;}
+        else {konkursy3 = 0;}
+
+        if(kP4 == 1){konkursy4 = 10;}
+        else if(kP4 == 2){konkursy4 = 7;}
+        else if(kP4 == 3){konkursy4 = 5;}
+        else if(kP4 == 4){konkursy4 = 7;}
+        else if(kP4 == 5){konkursy4 = 3;}
+        else if(kP4 == 6){konkursy4 = 2;}
+        else {konkursy4 = 0;}
+
+        if(kP5 == 1){konkursy5 = 4;}
+        else if(kP5 == 2){konkursy5 = 3;}
+        else if(kP5 == 3){konkursy5 = 2;}
+        else if(kP5 == 4){konkursy5 = 1;}
+        else {konkursy5 = 0;}
+
+        konkursy = konkursy1 + konkursy2 + konkursy3 + konkursy4 + konkursy5;
+        if(konkursy > 18) {konkursy = 18;}
     }
     else{
         document.getElementById('pytania').classList.add('hidden');
+        konkursy = 0;
     }
 
-    // counts points for konkursy
-
-    if(kP1 == 1){konkursy1 = 10;}
-    else if(kP1 == 2){konkursy1 = 7;}
-    else if(kP1 == 3){konkursy1 = 5;}
-    else {konkursy1 = 0;}
-
-    if(kP2 == 1){konkursy2 = 10;}
-    else if(kP2 == 2){konkursy2 = 4;}
-    else if(kP2 == 3){konkursy2 = 3;}
-    else {konkursy2 = 0;}
-
-    if(kP3 == 1){konkursy3 = 10;}
-    else if(kP3 == 2){konkursy3 = 7;}
-    else if(kP3 == 3){konkursy3 = 5;}
-    else if(kP3 == 4){konkursy3 = 7;}
-    else if(kP3 == 5){konkursy3 = 5;}
-    else if(kP3 == 6){konkursy3 = 3;}
-    else {konkursy3 = 0;}
-
-    if(kP4 == 1){konkursy4 = 10;}
-    else if(kP4 == 2){konkursy4 = 7;}
-    else if(kP4 == 3){konkursy4 = 5;}
-    else if(kP4 == 4){konkursy4 = 7;}
-    else if(kP4 == 5){konkursy4 = 3;}
-    else if(kP4 == 6){konkursy4 = 2;}
-    else {konkursy4 = 0;}
-
-    if(kP5 == 1){konkursy5 = 4;}
-    else if(kP5 == 2){konkursy5 = 3;}
-    else if(kP5 == 3){konkursy5 = 2;}
-    else if(kP5 == 4){konkursy5 = 1;}
-    else {konkursy5 = 0;}
-
-    konkursy = konkursy1 + konkursy2 + konkursy3 + konkursy4 + konkursy5;
-    if(konkursy > 18) {konkursy = 18;}
     document.getElementById('konkursy').textContent = konkursy;
 
     // counts tolal points
