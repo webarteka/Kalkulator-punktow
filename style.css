@@ -45,9 +45,20 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 
 .hidden{
-    display: none;
+    display: none!important;
 }
-
+.valid{
+    background: #E7FEF6 !important;
+    border: 2px solid #63A48C !important;
+    outline: none !important;
+    font-weight: 700 !important;
+}
+.invalid{
+    background: #FEE7E7 !important;
+    border: 2px solid #A46363 !important;
+    outline: none !important;
+    font-weight: 700 !important;
+}
 
 
 /*elements*/
@@ -170,14 +181,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
     cursor: pointer;
 }
 .number input:focus{
-    background: #E7FEF6;
-    border: 2px solid #63A48C;
-    outline: none;
-    font-weight: 700;
-}
-.number input:invalid{
-    background: #FEE7E7;
-    border: 2px solid #A46363;
     outline: none;
     font-weight: 700;
 }
