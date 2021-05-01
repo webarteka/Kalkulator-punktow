@@ -75,6 +75,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 .container{
     width: 1200px;
+    padding: 40px 0;
     min-width: 320px;
     margin: 0 auto;
 
@@ -88,7 +89,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 .results{
     width: 100%;
     height: fit-content;
-    margin: 40px auto 40px auto;
+    margin: 0 auto;
 
     background: #ffffff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -135,15 +136,31 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 
 
 
+footer{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+
+    text-align: center;
+    border-top: 2px solid #DDDDDD;
+    color: #808080;
+}
+
+
+
 .form{
     width: 100%;
 }
 .section{
     padding: 40px;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     background: #ffffff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+}
+.section:first-child{
+    margin-top: 0;
 }
 .description{
     margin-top: 20px;
@@ -299,8 +316,15 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
         width: 100%;
         grid-template-columns: 1fr;
     }
-    .results, .section{
-        max-width: 1000px;
+    .results{
+        max-width: 800px;
+        margin-top: 40px;
+    }
+    .section{
+        max-width: 800px;
+    }
+    footer{
+        max-width: 800px;
     }
 }
 
